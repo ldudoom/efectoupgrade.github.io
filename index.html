@@ -2,27 +2,163 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>Efecto Upgrade | Arquitectura Financiera</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Efecto Upgrade | Eleva tu Estándar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
-        body { background-color: #0a0a0a; color: #f5f5f5; font-family: 'Montserrat', sans-serif; margin: 0; text-align: center; }
-        header { padding: 100px 20px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070'); background-size: cover; }
-        h1 { font-family: 'Playfair Display', serif; font-size: 3rem; color: #d4af37; margin-bottom: 10px; }
-        p { font-size: 1.2rem; max-width: 600px; margin: 20px auto; color: #ccc; }
-        .cta-button { background-color: #d4af37; color: #000; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; margin-top: 30px; transition: 0.3s; }
-        .cta-button:hover { background-color: #f5f5f5; }
-        footer { padding: 50px; font-size: 0.8rem; color: #555; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #0a0a0a;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .gold { color: #d4af37; }
+        .gold-bg { background-color: #d4af37; }
+        .gold-border { border-color: #d4af37; }
+        .hover-gold:hover { color: #d4af37; }
     </style>
+
+    <!-- MailerLite Universal -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '2154968');
+    </script>
+    <!-- End MailerLite Universal -->
 </head>
-<body>
-    <header>
-        <h1>EFECTO UPGRADE</h1>
-        <p>No es suerte, es arquitectura financiera. Deja de operar por emoción y comienza a ejecutar por estrategia.</p>
-        <a href="TU_LINK_DE_CALENDLY" class="cta-button">AGENDAR CONSULTORÍA ESTRATÉGICA</a>
+
+<body class="text-gray-200">
+
+    <!-- HEADER -->
+    <header class="fixed w-full z-50 bg-black/70 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <img src="img/efectoUpgrade_noBgColor.svg" alt="Efecto Upgrade Logo" class="h-10">
+            <nav class="hidden md:flex space-x-8 text-sm tracking-wide uppercase">
+                <a href="#filosofia" class="hover-gold transition">Filosofía</a>
+                <a href="#estrategia" class="hover-gold transition">Estrategia</a>
+                <a href="#contacto" class="hover-gold transition">Acceso</a>
+            </nav>
+        </div>
     </header>
-    <footer>
-        &copy; 2026 Efecto Upgrade. Todos los derechos reservados.
+
+    <!-- HERO -->
+    <section class="relative min-h-screen flex items-center justify-center text-center px-6 pt-32">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1974&auto=format&fit=crop"
+                 class="w-full h-full object-cover opacity-20">
+        </div>
+
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Arquitectura financiera para quienes están cansados de <span class="gold">improvisar con su dinero.</span>
+            </h1>
+
+            <p class="text-lg md:text-xl mb-10 text-gray-300">
+                No vendemos promesas rápidas. Construimos sistemas reales.
+            </p>
+
+            <a href="#contacto"
+               class="px-10 py-4 gold-bg text-black font-semibold tracking-wide uppercase rounded-sm hover:opacity-90 transition shadow-lg">
+                Solicitar Información
+            </a>
+        </div>
+    </section>
+
+    <!-- FILOSOFIA -->
+    <section id="filosofia" class="py-24 px-6 bg-[#111111]">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-semibold mb-6 gold">
+                    Nuestra Filosofía
+                </h2>
+                <h4 class="text-xl md:text-2xl font-semibold mb-6 gold">
+                    Dos mentes. Una visión compartida.
+                </h4>
+
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    <b>Efecto Upgrade</b> no nació como un modelo de negocio convencional; nació de una visión compartida en el hogar.
+                    Como esposos y socios, entendimos que el verdadero crecimiento financiero requiere más que gráficos:
+                    requiere arquitectura mental y coherencia estratégica.
+                </p>
+
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    Creemos que la libertad no es un destino, sino un estándar que se elige cada día.
+                    Nuestra misión es acompañar a quienes desean operar con precisión profesional.
+                </p>
+
+                <p class="text-gray-300 leading-relaxed">
+                    Este proyecto es el resultado de nuestra pasión por la tecnología,
+                    la educación financiera y el compromiso de elevar el estándar.
+                </p>
+            </div>
+
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?q=80&w=1974&auto=format&fit=crop"
+                     class="rounded-sm shadow-2xl opacity-90">
+                <div class="absolute inset-0 border gold-border rounded-sm"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTRATEGIA -->
+    <section id="estrategia" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1974&auto=format&fit=crop"
+                     class="rounded-sm shadow-2xl opacity-80">
+                <div class="absolute inset-0 border gold-border rounded-sm"></div>
+            </div>
+
+            <div>
+                <h2 class="text-3xl md:text-4xl font-semibold mb-6 gold">
+                    Trading Profesional & Mentalidad
+                </h2>
+
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    Implementamos sistemas de gestión de capital, control emocional y ejecución disciplinada.
+                </p>
+
+                <ul class="space-y-4 text-gray-400">
+                    <li>✔ Gestión de riesgo estructurada</li>
+                    <li>✔ Psicología de alto rendimiento</li>
+                    <li>✔ Sistemas replicables</li>
+                    <li>✔ Disciplina antes que emoción</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+    <!-- LEAD MAGNET / CONTACTO -->
+    <section id="contacto" class="py-24 px-6 text-center">
+        <div class="max-w-2xl mx-auto ml-embedded" data-form="9ZDa7p"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-10 px-6 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-500 text-sm">
+                © 2026 Efecto Upgrade. Todos los derechos reservados.
+            </p>
+
+            <div class="flex space-x-6 mt-4 md:mt-0 text-sm uppercase tracking-wide">
+                <a href="https://www.instagram.com/efectoupgrade/" target="_blank" class="hover-gold transition">Instagram</a>
+                <a href="https://www.tiktok.com/@efectoupgrade" target="_blank" class="hover-gold transition">TikTok</a>
+                <a href="https://www.facebook.com/efectoupgrade/" target="_blank" class="hover-gold transition">Facebook</a>
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>
